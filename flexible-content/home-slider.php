@@ -5,7 +5,7 @@
   ?>
 
   <!-- Carousel -->
-  <div id="demo" class="carousel" data-bs-ride="carousel">
+  <div id="hero-slider" class="carousel" data-bs-ride="carousel">
 
     <?php if($slider && is_array($slider) && count($slider) > 0): ?>
       <!-- Indicators/dots -->
@@ -18,7 +18,7 @@
       <!-- The slideshow/carousel -->
       <div class="carousel-inner">
         <?php foreach ($slider as $key => $slide): ?>
-          <div class="carousel-item active">
+          <div class="carousel-item <?php echo ($key == 0)?'active':''; ?>">
               <div class="container">
                   <div class="slider-text">
 					<?php if($slide['heading']): ?>
