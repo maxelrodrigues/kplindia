@@ -1,0 +1,90 @@
+# START --- ✄ -----------------------:
+  ☐ Change WP_DEBUG variable to true in wp-config.php file in root
+  ☐ Activate the theme
+  ☐ Change site title and tagline in Settings -> General
+  ☐ Create pages "Home" and "Blog".
+  ☐ Go to Settings -> Reading
+      ☐ Select "A static page" and select page "Home" for "Homepage" and page "Blog" for "Posts page"
+      ☐ Check "Discourage search engine..."
+      ☐ Set "5" for "Blog pages show at most"
+  ☐ Go to Settings -> Permalinks and select "Custom structure" and set "/%postname%/" without quotes
+  ☐ Go to Settings -> Discussions and
+      ☐ If comments not allowed, Uncheck "Allow people to post comments on new articles"
+      ☐ If comments not allowed, Uncheck "Show Avatars"
+    You may use https://www.favicon-generator.org/ - Generate only 16x16 favicon.ico
+
+# FINALIZE --- ✄ -----------------------:
+  ☐ Redirect all CPT slug to plural URL and use custom template to list all CPT posts for eg. url.com/resource should be redirect to url.com/resources
+  ☐ Make sure all the content is editable from backend, if not please mention
+  ☐ Change WP_DEBUG variable to false in wp-config.php file in root
+  ☐ Go to Settings -> Reading and Uncheck "Discourage search engine..."
+  ☐ Copy code from style.css file to editor-style.css. Make sure the body font matches and appropriate fonts are loaded. If typekit fonts are used we need to a js plugin to display typekit fonts in WP editor. __REMIND TO ADD STEPS__
+  ☐ Check for any console errors on every page
+  ☐ Rebuild all the thumbnails
+  ☐ Optimize wp-content/uploads directory
+  ☐ Optimize database using "WP Optimize" plugin. Please take a backup
+  ☐ Remove unwanted icons
+  ☐ Remove unwanted/extra code from each file one by one
+  ☐ Remove unwanted plugins
+  ☐ Hide unwanted options from admin menu sidebar using "Admin menu editor" plugin
+
+  RESPONSIVE & CROSS BROWSER TESTING --- ✄ -----------------------
+# WINDOWS --- ✄ -----------------------:
+  ☐ IE 11+
+  ☐ Chrome
+  ☐ Safari
+  ☐ Firefox
+  ☐ Opera
+# MAC --- ✄ -----------------------:
+  ☐ Safari
+  ☐ Chrome
+  ☐ Firefox
+  ☐ Opera
+  iOS (6,7,X,iPad) --- ✄ -----------------------
+  ☐ Safari
+  ☐ Chrome
+  Android --- ✄ -----------------------
+  ☐ Chrome
+  ☐ Firefox
+  ☐ Opera
+  ☐ UC Browser
+
+# PRODUCTION --- ✄ -----------------------:
+  ☐ Add iThemes security plugin and activate it
+  ☐ Change backend url from /wp-admin to /manage
+http://wiki.threesixtyeight.is/article/launch-check-list/
+
+WP Engine Development:
+☐ Add Site - Click
+☐ Site Name: - Input
+    Name of the project in Camelcase. If two words separated by space
+☐ Site group - Input
+    Select the name of the lead developer
+☐ Add Development - Click
+☐ Name the environment: - Input
+    Name of the environment with dev suffix. It will also become the URL. If that name is not available change the "dev" to "devs".
+☐ Create Environment - Click
+☐ Utilities - Click
+☐ Enable Password Protected for Development (Block Traffic/Unblock)
+    User is always the "EnviromnentName/Subdomain"
+    Password will be the "{EnviromnentName}" + "368"
+☐ STP Users (Development) - Click
+    Username will be the "enviromnent name"
+    Password will be "{{ Regular 368 }}"
+☐ WP Admin
+    Click on reset password and change it to the {{ Regular 368 }} password
+☐ Use Local to push site to WP Engine
+☐ Reset File permission in Utilities -> Reset Permissions or else the SFTP users will not be able to upload files
+
+DeployBot:
+☐ Connect a repository - Click
+☐ Select "sahilmepani"
+☐ Choose repository
+☐ Select Yellow color and Submit and it will initialize the connection
+☐ Click on repo
+☐ Create environment and server
+☐ Name - Development & Color label: Yellow
+☐ Deployment Mode: Automatic
+☐ Select Branch Development or else master
+☐ Triggers - Notify Slack & Select channel "deploybot"
+☐ Deployment Option: Click on SFTP and enter server details

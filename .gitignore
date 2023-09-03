@@ -1,0 +1,13 @@
+#Ignore folder
+.phpintel
+.sass-cache
+.vscode
+*.css.map
+Thumbs.db
+acf-json
+source/bower_components
+source/node_modules
+sftp-config.json
+sftp-config-live.json
+sftp-config-dev.json
+/nbproject/private/

@@ -1,0 +1,229 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+h1, .h1 {
+  font-size: 30px;
+}
+
+h2, .h2 {
+  font-size: 21px;
+}
+
+h3, .h3 {
+  font-size: 16px;
+}
+
+h4, .h4 {
+  font-size: 14px;
+}
+
+h5, .h5 {
+  font-size: 12px;
+}
+
+h6, .h6 {
+  font-size: 11px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  outline: 0;
+}
+a:focus {
+  text-decoration: none;
+}
+
+a[href^=tel] {
+  cursor: default;
+}
+
+small {
+  font-size: 90%;
+}
+
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+dd {
+  margin-left: 0;
+}
+
+tt,
+code {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1340px !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-header {
+  height: 100px;
+  border-bottom: 1px solid #ffffff0d;
+  z-index: 1;
+}
+.main-header ul li {
+  margin: 0 20px;
+}
+.main-header ul li a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.sub-heading {
+  color: #212121;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .sub-heading {
+    font-size: 34px;
+  }
+}
+
+.text-label {
+  color: #64647c;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.banner-contents {
+  margin-top: -100px;
+}
+.banner-contents .text-cover {
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 140px;
+  color: 1px solid rgba(255, 255, 255, 0.2);
+}
+.banner-contents .text-cover h1 {
+  font-size: 84px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .banner-contents .text-cover h1 {
+    font-size: 44px;
+  }
+}
+.banner-contents .text-cover .bnr-btns a {
+  margin: 0 5px;
+}
+
+.primary-action {
+  background: #b0b02f;
+  padding: 15px 43px;
+  border-radius: 55px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 30px;
+}
+@media screen and (max-width: 991px) {
+  .primary-action {
+    padding: 13px 43px;
+  }
+}
+
+.secondary-action {
+  padding: 15px 43px;
+  border-radius: 55px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 991px) {
+  .secondary-action {
+    padding: 12px 30px;
+  }
+}
+
+.abouts-us label {
+  font-size: 18px;
+  color: #b1b3c2;
+  font-family: "Poppins", sans-serif;
+}
+.abouts-us .img-cover {
+  background: #eee;
+  height: 100%;
+  padding: 25px;
+}
+.abouts-us .text-cover {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 50px;
+}
+.abouts-us .text-cover .item {
+  padding: 25px 0;
+  font-family: "Poppins", sans-serif;
+}
+.abouts-us .text-cover .item i {
+  margin-right: 10px;
+}
+.abouts-us .text-cover .item h4 {
+  font-size: 18px;
+  color: #212121;
+  font-family: "Poppins", sans-serif;
+}
+.abouts-us .text-cover .item label {
+  font-size: 16px;
+  color: #b1b3c2;
+  font-family: "Poppins", sans-serif;
+  max-width: 500px;
+}
+
+/*# sourceMappingURL=main.css.map */
